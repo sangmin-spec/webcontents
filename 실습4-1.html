@@ -5,33 +5,40 @@
         <title>리스트 만들기</title>
         <style>
             #menubar{
-                background : aliceblue;
+                background-color : lightgray
                 width: 500px;
             }
-            #menubar ul{/* 여백과 패딩 모두0 */
+
+            #menubar ul{
                 margin : 0;
                 padding : 0;
-                width: 500px; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */ 
+                width: 500px;
             }
-            #menubar ul li{
-                display : block; /* 새 줄로 넘어가지 않게 */
-                list-style-type : square; /* 마커 삭제 */
-                padding : 0px 15px; /* top=bottom=0, left=right=15px */
 
+            #menubar ul li{
+                display : list-item;
+                list-style-type: disc;
+                padding : 0px 15px;
+                list-style-position: outside;
+                margin-left: 20px;
             }
+
             #menubar ul li a{
-                text-decoration : none; /* 링크 보이지 않게 */
+                text-decoration : none;
                 color : black;
-            }   
+            }
+
             #menubar ul li:hover{
-                background-color : yellowgreen; /*마우스 올라 갈 때 색 */
+                background-color : yellowgreen;
             }
         </style>
     </head>
+
     <body>
         <h3>가보고 싶은 나라</h3>
         <hr>
-         <nav id="menubar">
+
+        <nav id="menubar">
             <ul>
                 <li><a href="#">프랑스</a></li>
                 <li><a href="#">독일</a></li>
