@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>animation</title>
+        <style>
+            img {
+                animation: spin 1s linear infinite; 
+            }
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg); /* 시작할 때 0도 */
+                }
+                to {
+                    transform: rotate(360deg); /* 끝날 때 360도 (한 바퀴 회전) */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h3>어지러워요</h3>
+        <hr>
+        <p><img src="media/스폰지밥.png" width="250" height="150"></p>
+    </body>
+</html>
